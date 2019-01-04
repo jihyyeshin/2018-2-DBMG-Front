@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".PokemonDetailActivity">
+
+    <RelativeLayout
+        android:paddingBottom="4dp"
+        android:elevation="4dp"
+        android:background="#ffffff"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/pokemon_name"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#606060"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="포켓몬 디테일"/>
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/pokemon_image"
+        android:layout_width="180dp"
+        android:layout_height="175dp"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/pokemon_ball" />
+    <RelativeLayout
+        android:layout_below="@id/pokemon_image"
+        android:layout_marginTop="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/detail1"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/name"
+                android:textSize="20dp"
+                android:textColor="#707070"
+                android:text="이름 : "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/detail_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="-2dp"
+                android:layout_toRightOf="@+id/name"
+                android:text="피카츄"
+                android:textColor="#707070"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/detail2"
+            android:layout_below="@+id/detail5"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/cp"
+                android:textSize="20dp"
+                android:textColor="#707070"
+                android:text="cp : "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/detail_cp"
+                android:layout_toRightOf="@+id/cp"
+                android:text="194"
+                android:textColor="#707070"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/detail3"
+            android:layout_below="@+id/detail2"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/date"
+                android:textSize="20dp"
+                android:textColor="#707070"
+                android:text="잡은 날 : "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/detail_date"
+                android:layout_toRightOf="@+id/date"
+                android:text="2018/10/29"
+                android:textColor="#707070"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/detail4"
+            android:layout_below="@+id/detail1"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/height"
+                android:textSize="20dp"
+                android:textColor="#707070"
+                android:text="키 : "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/detail_height"
+                android:layout_toRightOf="@+id/height"
+                android:text="0.96m"
+                android:textColor="#707070"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/detail5"
+            android:layout_below="@+id/detail4"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/weight"
+                android:textSize="20dp"
+                android:textColor="#707070"
+                android:text="몸무게 : "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/detail_weight"
+                android:layout_toRightOf="@+id/weight"
+                android:text="20.32kg"
+                android:textColor="#707070"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

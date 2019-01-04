@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:paddingBottom="4dp"
+        android:elevation="4dp"
+        android:background="#ffffff"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/gym_name"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#606060"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="중앙도서관"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/surr_pok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_alignStart="@+id/surr_gym_list"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="20dp"
+        android:text="주변 포켓몬"
+        android:textColor="#707070"
+        android:textSize="20dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/surr_pokemon_list"
+        android:layout_width="348dp"
+        android:layout_height="140dp"
+        android:layout_below="@+id/surr_pok"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/surr_gym"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_alignStart="@+id/title"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="268dp"
+        android:layout_marginBottom="20dp"
+        android:text="주변 체육관"
+        android:textColor="#707070"
+        android:textSize="20dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/surr_gym_list"
+        android:layout_width="342dp"
+        android:layout_height="123dp"
+        android:layout_below="@+id/surr_gym"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginRight="20dp"
+        android:scrollbars="none|horizontal|vertical">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/go_to_mypage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="295dp"
+        android:layout_marginBottom="7dp"
+        android:text="마이페이지" />
+
+</RelativeLayout>
